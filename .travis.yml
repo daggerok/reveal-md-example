@@ -6,21 +6,20 @@ script:
 env:
   global:
   - TERM=dumb
-  - secure: KdBWS9LXirk9AYp6Db8Qc/1KFaQc1TB/C//s9XJj6agNnCQqIHH2jQWZp9/hTN6AGreDS2FO4Qn5DmeLzYYS+nDjSPluO46lJO/RevAmO3LdRPW1fIElw13AI9FqVgxv/kFWPazBhsKO1Bf2lWwQHugbVUPIlKuzIXPGU/018SOJZDVZnwfclgoizEvqnvpcOkDLNVeKxF7iSfgmWS8AG4ygMam9I1dmaLST3MDqZSf+3lI9CJuJ6kqW5DcJoQnwVpXkoAs+W61HDqlsUOsvr68KeiNqNIKdJB3fEAcF3YpGdYhl+pwZHXfR77qPE7c/D4q5n/oc/XboAmeXbSllB+IIVghMdsQtQGDZ7QvywAwB6wHl4liDusgGoTNGYKjqNL5B7k702AbyYVkyq6dH7c6ZTu6x3mTh/dmNvVa1XhSmUw1DZUAQBnlbMkb/0XLwMacU9OVq/jSuSDYkBivQCFe7Eyy2tmFYObQLmmRTvxFGzNmp/BZw+OLfKuBCCdaHpZaB+fRe2PVa/bjhT2Ue+giTD1Kzxg2md/9qogRYUo9MAO3kH160Bo6xhNuGHJMMrYj8tBvOaVsABqGmWcsyY83UIAseIpFKeegREjxt5M81f7cHNPRcBYL8hbK9eK1OCUJSg7ATE/qrJp4z+tVwqpx0IF1JvVy7istURu64eyY=
-#before_deploy:
-#  - npm run gh-pages
-#deploy:
-#  provider: pages
-#  skip-cleanup: true
-#  # travis encrypt GITHUB_TOKEN=<your github repo token> --add
-#  github-token: "$GITHUB_TOKEN"
-#  keep-history: true
-#  on:
-#    branch: master
-#  local-dir: dist
-#  target_branch: gh-pages
+  - secure: wB2dIojM1tulQD8lvYcFYnMqw2g/VQLEfuE7TG+FGZQkoQpfO39ytCIRl48n22xLQhxKo0mdBurhsru4vUoRyvoyylGRXoLBHRbTQBqyru0Pw9EBsUs33dHNYS9w7X2YyrP7jiz/yXWVBku08Wiiv7syMOEJLuBXGl0m4bDjv3Bji8M68XNeK2XkPXnbxx1nEyZdDjaa3PgmVsQMHt1ui52zaij0dy87AkN529qoPFMkxEw5q2oHKj7XErY+2wEMCWkM2QJT97ktwhTt3G1/REpaf7Fkp2br4O3AofEJfILRee7UKlnl3OW2miVoVWgIwH4PMOBw6jhZblTW3xhcrPavCFI8pue4GAl2PuKfH+OlsknXzf28XfaI49/ThM66FEzU7Q9/+Mt3ARUqCRHDg6Dcj3CsdHdiUP2TUomFz7uAi7z4g5TCyR1DR59nNjTe2tu4PbmLVBCqKOejTtWZHpJOnxAAngAVRO/Hufix3qGvQMU1odc9W8U+QAbhSLjUExZNNG7NhFei2hEaC0lTG4WoOijk3eN1+lgNPgqB5FuFgzkPAnwfFD50kJGIVxuaeLOHdHqwXQ0Mk7t0PfZieqcllOerE+hXn9x1Bbqe/bDiuxdBQ8X5EtE7r457dRoPQYaYHCz7GqJelYOzgJPkj2c4mxltl4gXyR+55Q31iew=
+before_deploy:
+- npm i ; npm run gh-pages
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: "$GITHUB_TOKEN"
+  keep-history: true
+  on:
+    branch: master
+  local-dir: dist
+  target_branch: gh-pages
 cache:
   packages: true
   npm: true
   directories:
-  - ~/.npm
+  - "~/.npm"
