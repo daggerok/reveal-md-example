@@ -1,19 +1,18 @@
 {
   "name": "reveal-md-example",
-  "version": "1.0.0-SNAPSHOT",
+  "version": "1.0.0",
   "description": "Reveal Markdown slides example",
   "main": "index.js",
   "scripts": {
     "gh-pages": "npm-run-all gh-pages:*",
     "gh-pages:rimraf": "rimraf -rf dist",
     "gh-pages:reveal-md": "reveal-md ./README.md --static dist --absolute-url '/reveal-md-example/'",
-    "gh-pages:mv-dist": "mv _static dist",
-    "gh-pages:mv-404": "mv ./dist/README.html ./dist/404.html",
+    "gh-pages:mv": "mv ./dist/README.html ./dist/404.html",
     "watch:black": "reveal-md ./README.md --theme black --disable-auto-open --port=3000 --watch",
     "watch:solarized": "reveal-md ./README.md -t solarized --disable-auto-open --port-3000 --watch",
     "build": "reveal-md ./README.md --static dist",
     "preserve": "npm run build",
-    "serve": "serve _static # bug, should be: dist"
+    "serve": "serve dist"
   },
   "keywords": [
     "reveal",
@@ -25,9 +24,8 @@
   "license": "MIT",
   "devDependencies": {
     "mv": "2.1.1",
-    "ncp": "2.0.0",
     "npm-run-all": "4.1.5",
-    "reveal-md": "3.0.0",
+    "reveal-md": "3.0.1",
     "rimraf": "2.6.3",
     "serve": "10.1.2"
   }
