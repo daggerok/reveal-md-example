@@ -1,12 +1,12 @@
 # Title [![Build Status](https://travis-ci.org/daggerok/reveal-md-example.svg?branch=master)](https://travis-ci.org/daggerok/reveal-md-example)
 
-## Getting started with example
+### Getting started with example
 
 ```bash
+cd /tmp/
 git clone https://github.com/daggerok/reveal-md-example /tmp/reveal-md-example
-cd /tmp/reveal-md-example
-npm i
-npm run serve
+cd reveal-md-example/
+npm i ; npm run serve
 open http://127.0.0.
 ```
 
