@@ -8,9 +8,9 @@ git clone https://github.com/daggerok/reveal-md-example
 cd reveal-md-example/
 
 npm i ; npm run serve
+```
 
 open http://127.0.0.1:5000/
-```
 
 ---
 
