@@ -2,7 +2,7 @@
   "name": "reveal-md-example",
   "version": "1.0.0",
   "description": "Reveal Markdown slides example",
-  "main": "index.js",
+  "main": "README.md",
   "scripts": {
     "gh-pages": "npm-run-all gh-pages:*",
     "gh-pages:rimraf": "rimraf -rf dist",
