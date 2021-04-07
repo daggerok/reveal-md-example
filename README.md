@@ -1,4 +1,8 @@
-# Title [![Build Status](https://travis-ci.org/daggerok/reveal-md-example.svg?branch=master)](https://travis-ci.org/daggerok/reveal-md-example)
+# Title [![reveal-md-example github pages](https://github.com/daggerok/reveal-md-example/actions/workflows/github-pages.yaml/badge.svg)](https://github.com/daggerok/reveal-md-example/actions/workflows/github-pages.yaml)
+
+<!--
+[![Build Status](https://travis-ci.org/daggerok/reveal-md-example.svg?branch=master)](https://travis-ci.org/daggerok/reveal-md-example)
+-->
 
 ### Getting started with example
 
