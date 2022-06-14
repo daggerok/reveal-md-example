@@ -1,0 +1,15 @@
+name: Testcafe end-to-end tests
+on: [push]
+jobs:
+  test:
+    name: Run e2e tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - id: reveal-md-example-npm-cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-${{ hashFiles('**/package.json', '**/package-lock.json') }}
+      - run: npm i -ED
+      - run: npm t
