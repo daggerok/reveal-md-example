@@ -1,9 +1,5 @@
-name: 'reveal-md-example github pages'
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+name: GitHub pages
+on: [push]
 jobs:
   docs:
     runs-on: ubuntu-latest

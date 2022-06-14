@@ -1,4 +1,4 @@
-name: Testcafe end-to-end tests
+name: Testcafe e2e tests
 on: [push]
 jobs:
   test:
