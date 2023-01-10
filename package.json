@@ -37,7 +37,7 @@
     "reveal-md": "5.3.3",
     "rimraf": "3.0.2",
     "serve": "13.0.2",
-    "testcafe": "1.19.0",
+    "testcafe": "2.2.0",
     "testcafe-reporter-spec": "2.1.1",
     "wait-port": "0.2.9"
   }
